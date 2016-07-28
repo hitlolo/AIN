@@ -1,0 +1,23 @@
+body {
+    background-color: #4c4c4c;
+    color: #cfcfcf;
+}
+.source {
+    color: gray;
+}
+.time {
+    color: gray;
+}
+
+.readnumber {
+    color: gray;
+}
+
+.content {
+    background-color: #4c4c4c;
+    color: #cfcfcf;;
+}
+
+hr.hairline {
+    border-bottom: 0.5px rgb(49, 182, 239) solid;
+}

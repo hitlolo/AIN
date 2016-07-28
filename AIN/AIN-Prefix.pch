@@ -1,0 +1,51 @@
+//
+//  AIN_Prefix.pch
+//  AIN
+//
+//  Created by Lolo on 16/5/23.
+//  Copyright © 2016年 Lolo. All rights reserved.
+//
+
+#ifndef AIN_Prefix_pch
+#define AIN_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+#ifdef __OBJC__
+
+//framework
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+
+//vendors
+
+#import <FMDB.h>
+#import <JDStatusBarNotification.h>
+#import <AFNetworking.h>
+
+//category
+#import "UIView+FrameHelper.h"
+#import "UIScreen+FrameHelper.h"
+#import "UIViewController+FrameHelper.h"
+
+
+//hit library
+#import "HITDateHelper/HITDateHelper.h"
+
+//common
+#import "AINCommon.h"
+#import "AINURL.h"
+#import "AINArticle.h"
+#import "AINModel.h"
+
+//manager
+#import "AINSettingManager.h"
+#import "AINDBManager.h"
+
+#endif
+
+#endif /* AIN_Prefix_pch */

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FQ9-9l-MQh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Movie-->
+        <scene sceneID="7Se-aW-W9F">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" hidesBottomBarWhenPushed="YES" id="nyj-Tr-gel" customClass="AINMovieListController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c8y-VH-cn4"/>
+                        <viewControllerLayoutGuide type="bottom" id="vNs-As-Vfk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q8b-kY-zEO" customClass="AINBackgroundView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KhL-cq-5oW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="KhL-cq-5oW" firstAttribute="centerX" secondItem="q8b-kY-zEO" secondAttribute="centerX" id="9l6-Ce-osX"/>
+                            <constraint firstItem="KhL-cq-5oW" firstAttribute="height" secondItem="q8b-kY-zEO" secondAttribute="height" id="KIm-k8-oaA"/>
+                            <constraint firstItem="KhL-cq-5oW" firstAttribute="width" secondItem="q8b-kY-zEO" secondAttribute="width" id="POu-wU-XNK"/>
+                            <constraint firstItem="KhL-cq-5oW" firstAttribute="centerY" secondItem="q8b-kY-zEO" secondAttribute="centerY" id="ZoW-RK-zfO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Movie" id="fvi-VE-GWe"/>
+                    <connections>
+                        <outlet property="tableView" destination="KhL-cq-5oW" id="cHB-EC-Ajs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7co-v0-D6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="370"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dF7-6f-cuf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FQ9-9l-MQh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yOW-1V-usd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nyj-Tr-gel" kind="relationship" relationship="rootViewController" id="c8z-eX-d5a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7QD-rC-IDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="370"/>
+        </scene>
+    </scenes>
+</document>

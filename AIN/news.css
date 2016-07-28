@@ -1,0 +1,49 @@
+html {
+    -webkit-text-size-adjust: none; /* Never autoresize text */
+}
+body {
+    word-break: break-all;
+    font-family: HelveticaNeue;
+    padding:5px;
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    body {
+        padding: 5px 70px;
+    }
+}
+h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font: -apple-system-headline;
+}
+.source {
+    text-align: right;
+}
+.time {
+    float:left;
+}
+.readnumber{
+    float:right;
+}
+hr {
+    border: none;
+}
+
+img, video, object, figure, iframe {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+a:link {
+    color: rgb(66, 191, 231);
+}
+iframe {
+    background-color: black;
+    border: none;
+}
+video {
+    background-color: black;
+}
+strong {
+    font-weight: normal;
+}

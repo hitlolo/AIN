@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="280" id="KGk-i7-Jjw" customClass="AINReadingRecommendCell">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="279.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIg-PV-bnz">
+                        <rect key="frame" x="28" y="28" width="35" height="17"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOP-yv-zJd">
+                        <rect key="frame" x="71" y="28" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KsJ-aY-WgX">
+                        <rect key="frame" x="70.5" y="57" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pM1-ju-DlT">
+                        <rect key="frame" x="70.5" y="86" width="277.5" height="177.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1A-P3-x1N">
+                        <rect key="frame" x="88" y="278.5" width="200" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="JYJ-mE-hnp"/>
+                            <constraint firstAttribute="width" constant="200" id="VEt-Me-UuR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KsJ-aY-WgX" firstAttribute="leading" secondItem="cOP-yv-zJd" secondAttribute="leading" id="3h0-l1-Vtu"/>
+                    <constraint firstAttribute="topMargin" secondItem="cOP-yv-zJd" secondAttribute="top" constant="-20" id="EcG-2Q-fKv"/>
+                    <constraint firstItem="cOP-yv-zJd" firstAttribute="leading" secondItem="RIg-PV-bnz" secondAttribute="trailing" constant="8" id="EpP-kB-aHX"/>
+                    <constraint firstItem="pM1-ju-DlT" firstAttribute="leading" secondItem="KsJ-aY-WgX" secondAttribute="leading" id="KRQ-tM-86g"/>
+                    <constraint firstItem="RIg-PV-bnz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Mol-s0-h0b"/>
+                    <constraint firstItem="pM1-ju-DlT" firstAttribute="top" secondItem="KsJ-aY-WgX" secondAttribute="bottom" constant="8" id="OTy-Hw-zLi"/>
+                    <constraint firstAttribute="topMargin" secondItem="RIg-PV-bnz" secondAttribute="top" constant="-20" id="TTD-XJ-5jW"/>
+                    <constraint firstAttribute="bottom" secondItem="e1A-P3-x1N" secondAttribute="bottom" id="TqK-sK-JrF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pM1-ju-DlT" secondAttribute="trailing" constant="20" id="bn0-PM-ecX"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="cOP-yv-zJd" secondAttribute="trailing" constant="20" id="gfg-4z-Y80"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pM1-ju-DlT" secondAttribute="bottom" constant="8" id="mhc-3y-jbh"/>
+                    <constraint firstItem="e1A-P3-x1N" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ndN-ny-R9O"/>
+                    <constraint firstItem="KsJ-aY-WgX" firstAttribute="top" secondItem="cOP-yv-zJd" secondAttribute="bottom" constant="8" id="w5h-Dj-gdt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="excerptText" destination="pM1-ju-DlT" id="wHI-7t-wDO"/>
+                <outlet property="numberLabel" destination="RIg-PV-bnz" id="DXc-7S-821"/>
+                <outlet property="subtitleLabel" destination="KsJ-aY-WgX" id="SOs-mr-9j3"/>
+                <outlet property="titleLabel" destination="cOP-yv-zJd" id="Yte-mr-tI3"/>
+            </connections>
+            <point key="canvasLocation" x="299" y="325"/>
+        </tableViewCell>
+    </objects>
+</document>

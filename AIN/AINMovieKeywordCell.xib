@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AINMovieKeywordCell">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="54"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="54"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zA-yJ-lmX">
+                        <rect key="frame" x="8" y="8" width="156" height="38"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="9zA-yJ-lmX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="IxV-cr-Po6"/>
+                <constraint firstAttribute="bottomMargin" secondItem="9zA-yJ-lmX" secondAttribute="bottom" id="T0a-9j-Oit"/>
+                <constraint firstAttribute="trailingMargin" secondItem="9zA-yJ-lmX" secondAttribute="trailing" id="tEy-Nq-XlK"/>
+                <constraint firstItem="9zA-yJ-lmX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="topMargin" id="voA-DL-mMh"/>
+            </constraints>
+            <size key="customSize" width="172" height="54"/>
+            <connections>
+                <outlet property="keywordLabel" destination="9zA-yJ-lmX" id="sLW-CO-kQH"/>
+            </connections>
+            <point key="canvasLocation" x="316" y="406"/>
+        </collectionViewCell>
+    </objects>
+</document>
